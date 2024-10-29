@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #111;
+    padding: 20px;
+}
+
+#box {
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+    border-radius: 10px;
+    position: absolute;
+
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+@keyframes  move {
+    from {
+        left: 0;
+        rotate: 0;
+    }
+    to {
+        left: 70%;
+        rotate: 360deg;
+    }
+}
